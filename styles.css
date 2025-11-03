@@ -261,6 +261,7 @@ body {
   width: 300px;
   height: 300px;
   filter: drop-shadow(0 10px 30px rgba(240, 75, 15, 0.5));
+  border-radius: 100%;
 }
 
 .code-elements {
@@ -530,7 +531,7 @@ body {
 
 .contact-methods {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--spacing-md);
 }
 
@@ -700,9 +701,19 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     
   }
+
+  .contact-methods
+  {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
+  .contact-methods
+  {
+    display: block;
+  }
+
   .container {
     padding: 0 var(--spacing-sm);
   }
